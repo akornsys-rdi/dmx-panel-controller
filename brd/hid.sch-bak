@@ -1,0 +1,1461 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "DMX Panel Controller"
+Date "2021-04-11"
+Rev "v1.0-rc1"
+Comp "Akornsys R & D & I"
+Comment1 "https://github.com/akornsys-rdi/dmx-panel-controller"
+Comment2 "Designed & drawn by: R. García"
+Comment3 "PCBID: FtBk#?%?01011421"
+Comment4 "Copyright © 2021 RileyStarlight, released under CERN OHL-S 2 License"
+$EndDescr
+Connection ~ 4600 5700
+Wire Wire Line
+	4750 5700 4600 5700
+Wire Wire Line
+	4600 5700 4500 5700
+Wire Wire Line
+	4600 6000 4600 5700
+Wire Wire Line
+	4600 6400 4600 6300
+Connection ~ 4100 5700
+Wire Wire Line
+	4200 5700 4100 5700
+Wire Wire Line
+	4100 5350 4100 5250
+Wire Wire Line
+	4100 5700 4100 5650
+Wire Wire Line
+	4000 5700 4100 5700
+$Comp
+L power:GND #PWR033
+U 1 1 60E18377
+P 4600 6400
+F 0 "#PWR033" H 4600 6150 50  0001 C CNN
+F 1 "GND" H 4605 6227 50  0000 C CNN
+F 2 "" H 4600 6400 50  0001 C CNN
+F 3 "" H 4600 6400 50  0001 C CNN
+	1    4600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60E1837F
+P 4600 6150
+F 0 "C11" H 4650 6250 50  0000 L CNN
+F 1 "10nF" H 4650 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 6000 50  0001 C CNN
+F 3 "~" H 4600 6150 50  0001 C CNN
+F 4 "Kemet" H 4600 6150 50  0001 C CNN "Manufacturer"
+F 5 "C0805C103J5RACTU" H 4600 6150 50  0001 C CNN "Manufacturer Part Number"
+	1    4600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 60E18387
+P 4350 5700
+F 0 "R10" V 4250 5600 50  0000 L CNN
+F 1 "10k" V 4350 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4280 5700 50  0001 C CNN
+F 3 "~" H 4350 5700 50  0001 C CNN
+F 4 "Yageo" H 4350 5700 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 4350 5700 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 60E1838D
+P 4100 5250
+F 0 "#PWR028" H 4100 5100 50  0001 C CNN
+F 1 "+5V" H 4115 5423 50  0000 C CNN
+F 2 "" H 4100 5250 50  0001 C CNN
+F 3 "" H 4100 5250 50  0001 C CNN
+	1    4100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60E18395
+P 4100 5500
+F 0 "R8" H 4150 5650 50  0000 L CNN
+F 1 "10k" V 4100 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 5500 50  0001 C CNN
+F 3 "~" H 4100 5500 50  0001 C CNN
+F 4 "Yageo" H 4100 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 4100 5500 50  0001 C CNN "Manufacturer Part Number"
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 5900
+Wire Wire Line
+	2200 5900 2600 5900
+Connection ~ 2300 5700
+Wire Wire Line
+	2200 5700 2300 5700
+Wire Wire Line
+	2300 6300 2300 6400
+Wire Wire Line
+	2600 6400 2600 6300
+$Comp
+L power:GND #PWR029
+U 1 1 60E183A1
+P 2300 6400
+F 0 "#PWR029" H 2300 6150 50  0001 C CNN
+F 1 "GND" H 2305 6227 50  0000 C CNN
+F 2 "" H 2300 6400 50  0001 C CNN
+F 3 "" H 2300 6400 50  0001 C CNN
+	1    2300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 60E183A7
+P 2600 6400
+F 0 "#PWR030" H 2600 6150 50  0001 C CNN
+F 1 "GND" H 2605 6227 50  0000 C CNN
+F 2 "" H 2600 6400 50  0001 C CNN
+F 3 "" H 2600 6400 50  0001 C CNN
+	1    2600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5700 2700 5700
+Wire Wire Line
+	2300 6000 2300 5700
+Wire Wire Line
+	2600 5900 2700 5900
+Wire Wire Line
+	2600 6000 2600 5900
+Connection ~ 3100 5900
+Wire Wire Line
+	3000 5900 3100 5900
+Connection ~ 3300 5700
+Wire Wire Line
+	3000 5700 3300 5700
+Wire Wire Line
+	3300 5700 3400 5700
+Wire Wire Line
+	3400 5900 3100 5900
+$Comp
+L Device:C C9
+U 1 1 60E183B9
+P 2300 6150
+F 0 "C9" H 2350 6250 50  0000 L CNN
+F 1 "10nF" H 2350 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2338 6000 50  0001 C CNN
+F 3 "~" H 2300 6150 50  0001 C CNN
+F 4 "Kemet" H 2300 6150 50  0001 C CNN "Manufacturer"
+F 5 "C0805C103J5RACTU" H 2300 6150 50  0001 C CNN "Manufacturer Part Number"
+	1    2300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60E183C1
+P 2600 6150
+F 0 "C10" H 2650 6250 50  0000 L CNN
+F 1 "10nF" H 2650 6050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2638 6000 50  0001 C CNN
+F 3 "~" H 2600 6150 50  0001 C CNN
+F 4 "Kemet" H 2600 6150 50  0001 C CNN "Manufacturer"
+F 5 "C0805C103J5RACTU" H 2600 6150 50  0001 C CNN "Manufacturer Part Number"
+	1    2600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60E183C9
+P 2850 5900
+F 0 "R11" V 2750 5800 50  0000 L CNN
+F 1 "10k" V 2850 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2780 5900 50  0001 C CNN
+F 3 "~" H 2850 5900 50  0001 C CNN
+F 4 "Yageo" H 2850 5900 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 2850 5900 50  0001 C CNN "Manufacturer Part Number"
+	1    2850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60E183D1
+P 2850 5700
+F 0 "R9" V 2750 5600 50  0000 L CNN
+F 1 "10k" V 2850 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2780 5700 50  0001 C CNN
+F 3 "~" H 2850 5700 50  0001 C CNN
+F 4 "Yageo" H 2850 5700 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 2850 5700 50  0001 C CNN "Manufacturer Part Number"
+	1    2850 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5900 4100 6400
+Wire Wire Line
+	4000 5900 4100 5900
+$Comp
+L power:GND #PWR032
+U 1 1 60E183D9
+P 4100 6400
+F 0 "#PWR032" H 4100 6150 50  0001 C CNN
+F 1 "GND" H 4105 6227 50  0000 C CNN
+F 2 "" H 4100 6400 50  0001 C CNN
+F 3 "" H 4100 6400 50  0001 C CNN
+	1    4100 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5800 3400 5800
+Wire Wire Line
+	3300 6400 3300 5800
+$Comp
+L power:GND #PWR031
+U 1 1 60E183E4
+P 3300 6400
+F 0 "#PWR031" H 3300 6150 50  0001 C CNN
+F 1 "GND" H 3305 6227 50  0000 C CNN
+F 2 "" H 3300 6400 50  0001 C CNN
+F 3 "" H 3300 6400 50  0001 C CNN
+	1    3300 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5900 3100 5650
+Wire Wire Line
+	3300 5700 3300 5650
+Wire Wire Line
+	3100 5350 3100 5250
+Wire Wire Line
+	3300 5250 3300 5350
+$Comp
+L power:+5V #PWR027
+U 1 1 60E183EE
+P 3300 5250
+F 0 "#PWR027" H 3300 5100 50  0001 C CNN
+F 1 "+5V" H 3315 5423 50  0000 C CNN
+F 2 "" H 3300 5250 50  0001 C CNN
+F 3 "" H 3300 5250 50  0001 C CNN
+	1    3300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR026
+U 1 1 60E183F4
+P 3100 5250
+F 0 "#PWR026" H 3100 5100 50  0001 C CNN
+F 1 "+5V" H 3115 5423 50  0000 C CNN
+F 2 "" H 3100 5250 50  0001 C CNN
+F 3 "" H 3100 5250 50  0001 C CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60E183FC
+P 3300 5500
+F 0 "R7" H 3350 5650 50  0000 L CNN
+F 1 "10k" V 3300 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 5500 50  0001 C CNN
+F 3 "~" H 3300 5500 50  0001 C CNN
+F 4 "Yageo" H 3300 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 3300 5500 50  0001 C CNN "Manufacturer Part Number"
+	1    3300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW11
+U 1 1 60E18404
+P 3700 5800
+F 0 "SW11" H 3700 6050 50  0000 C CNN
+F 1 "Encoder" H 3700 5550 50  0001 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 3550 5960 50  0001 C CNN
+F 3 "lib/datasheets/PEC12R.pdf" H 3700 6060 50  0001 C CNN
+F 4 "Bourns" H 3700 5800 50  0001 C CNN "Manufacturer"
+F 5 "PEC12R-4220F-S0024" H 3700 5800 50  0001 C CNN "Manufacturer Part Number"
+	1    3700 5800
+	1    0    0    -1  
+$EndComp
+Text Label 4150 2600 0    50   ~ 0
+COL6
+Text Label 3650 2600 0    50   ~ 0
+COL5
+Entry Wire Line
+	3650 2500 3750 2400
+Entry Wire Line
+	4150 2500 4250 2400
+Connection ~ 4550 4650
+Connection ~ 4550 4250
+Connection ~ 4550 3850
+Connection ~ 4550 3450
+Connection ~ 4550 3050
+Entry Bus Bus
+	5000 2500 5100 2400
+Wire Wire Line
+	4550 3050 4900 3050
+Wire Wire Line
+	4550 3450 4900 3450
+Wire Wire Line
+	4550 3850 4900 3850
+Wire Wire Line
+	4550 4250 4900 4250
+Wire Wire Line
+	4550 4650 4900 4650
+Entry Wire Line
+	4900 3050 5000 2950
+Entry Wire Line
+	4900 3450 5000 3350
+Entry Wire Line
+	4900 3850 5000 3750
+Entry Wire Line
+	4900 4250 5000 4150
+Entry Wire Line
+	4900 4650 5000 4550
+Text Label 4850 4650 2    50   ~ 0
+SEG_E
+Text Label 4850 4250 2    50   ~ 0
+SEG_D
+Text Label 4850 3850 2    50   ~ 0
+SEG_C
+Text Label 4850 3450 2    50   ~ 0
+SEG_B
+Text Label 4850 3050 2    50   ~ 0
+SEG_A
+Connection ~ 4150 4150
+Connection ~ 3650 4150
+Wire Wire Line
+	3650 4550 3650 4150
+Wire Wire Line
+	3700 4550 3650 4550
+Wire Wire Line
+	4150 4550 4150 4150
+Wire Wire Line
+	4200 4550 4150 4550
+Wire Wire Line
+	4500 4550 4550 4550
+Wire Wire Line
+	4550 4650 4550 4550
+Wire Wire Line
+	4050 4650 4550 4650
+Wire Wire Line
+	4050 4550 4050 4650
+Wire Wire Line
+	4000 4550 4050 4550
+$Comp
+L Device:LED D14
+U 1 1 60E18430
+P 4350 4550
+F 0 "D14" H 4343 4295 50  0000 C CNN
+F 1 "YELLOW" H 4343 4386 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4350 4550 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 4350 4550 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 4350 4550 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 4350 4550 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 60E18438
+P 3850 4550
+F 0 "D13" H 3843 4295 50  0000 C CNN
+F 1 "YELLOW" H 3843 4386 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3850 4550 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 3850 4550 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 3850 4550 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 3850 4550 50  0001 C CNN "Manufacturer Part Number"
+	1    3850 4550
+	-1   0    0    1   
+$EndComp
+Connection ~ 4150 3350
+Connection ~ 3650 3350
+Connection ~ 4150 3750
+Connection ~ 3650 3750
+Wire Wire Line
+	3650 4150 3650 3750
+Wire Wire Line
+	3700 4150 3650 4150
+Wire Wire Line
+	4150 4150 4150 3750
+Wire Wire Line
+	4200 4150 4150 4150
+Wire Wire Line
+	4500 4150 4550 4150
+Wire Wire Line
+	4550 4250 4550 4150
+Wire Wire Line
+	4050 4250 4550 4250
+Wire Wire Line
+	4050 4150 4050 4250
+Wire Wire Line
+	4000 4150 4050 4150
+$Comp
+L Device:LED D12
+U 1 1 60E1844D
+P 4350 4150
+F 0 "D12" H 4343 3895 50  0000 C CNN
+F 1 "YELLOW" H 4343 3986 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4350 4150 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 4350 4150 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 4350 4150 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 4350 4150 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 60E18455
+P 3850 4150
+F 0 "D11" H 3843 3895 50  0000 C CNN
+F 1 "WHITE" H 3843 3986 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3850 4150 50  0001 C CNN
+F 3 "lib/datasheets/VAOL-S8WR4.pdf" H 3850 4150 50  0001 C CNN
+F 4 "Visual Communications Company" H 3850 4150 50  0001 C CNN "Manufacturer"
+F 5 "VAOL-S8WR4" H 3850 4150 50  0001 C CNN "Manufacturer Part Number"
+	1    3850 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 3750 3650 3350
+Wire Wire Line
+	3700 3750 3650 3750
+Wire Wire Line
+	4150 3750 4150 3350
+Wire Wire Line
+	4200 3750 4150 3750
+Wire Wire Line
+	4500 3750 4550 3750
+Wire Wire Line
+	4550 3850 4550 3750
+Wire Wire Line
+	4050 3850 4550 3850
+Wire Wire Line
+	4050 3750 4050 3850
+Wire Wire Line
+	4000 3750 4050 3750
+$Comp
+L Device:LED D10
+U 1 1 60E18466
+P 4350 3750
+F 0 "D10" H 4343 3495 50  0000 C CNN
+F 1 "YELLOW" H 4343 3586 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4350 3750 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 4350 3750 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 4350 3750 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 4350 3750 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 60E1846E
+P 3850 3750
+F 0 "D9" H 3843 3495 50  0000 C CNN
+F 1 "BLUE" H 3843 3586 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3850 3750 50  0001 C CNN
+F 3 "lib/datasheets/5973605607F.pdf" H 3850 3750 50  0001 C CNN
+F 4 "Dialight" H 3850 3750 50  0001 C CNN "Manufacturer"
+F 5 "5973605607F" H 3850 3750 50  0001 C CNN "Manufacturer Part Number"
+	1    3850 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 4150 2950
+Connection ~ 3650 2950
+Wire Wire Line
+	3650 3350 3650 2950
+Wire Wire Line
+	3700 3350 3650 3350
+Wire Wire Line
+	4150 3350 4150 2950
+Wire Wire Line
+	4200 3350 4150 3350
+Wire Wire Line
+	4500 3350 4550 3350
+Wire Wire Line
+	4550 3450 4550 3350
+Wire Wire Line
+	4050 3450 4550 3450
+Wire Wire Line
+	4050 3350 4050 3450
+Wire Wire Line
+	4000 3350 4050 3350
+$Comp
+L Device:LED D8
+U 1 1 60E18481
+P 4350 3350
+F 0 "D8" H 4343 3095 50  0000 C CNN
+F 1 "YELLOW" H 4343 3186 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4350 3350 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 4350 3350 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 4350 3350 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 4350 3350 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 60E18489
+P 3850 3350
+F 0 "D7" H 3843 3095 50  0000 C CNN
+F 1 "GREEN" H 3843 3186 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3850 3350 50  0001 C CNN
+F 3 "lib/datasheets/APT2012SGC.pdf" H 3850 3350 50  0001 C CNN
+F 4 "Kingbright" H 3850 3350 50  0001 C CNN "Manufacturer"
+F 5 "APT2012SGC" H 3850 3350 50  0001 C CNN "Manufacturer Part Number"
+	1    3850 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2950 3650 2500
+Wire Wire Line
+	3700 2950 3650 2950
+Wire Wire Line
+	4150 2950 4150 2500
+Wire Wire Line
+	4200 2950 4150 2950
+Wire Wire Line
+	4500 2950 4550 2950
+Wire Wire Line
+	2900 4600 2950 4600
+Wire Wire Line
+	2950 4200 2900 4200
+Wire Wire Line
+	2900 3800 2950 3800
+Wire Wire Line
+	2950 3400 2900 3400
+Wire Wire Line
+	2900 3000 2950 3000
+Connection ~ 2950 3050
+Connection ~ 2950 3450
+Connection ~ 2950 3850
+Connection ~ 2950 4250
+Connection ~ 2950 4650
+Wire Wire Line
+	4550 3050 4550 2950
+Wire Wire Line
+	4050 3050 4550 3050
+Wire Wire Line
+	4050 2950 4050 3050
+Wire Wire Line
+	4000 2950 4050 2950
+$Comp
+L Device:LED D6
+U 1 1 60E184A4
+P 4350 2950
+F 0 "D6" H 4343 2695 50  0000 C CNN
+F 1 "YELLOW" H 4343 2786 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4350 2950 50  0001 C CNN
+F 3 "lib/datasheets/LY-M67K-K1L2-26-Z.pdf" H 4350 2950 50  0001 C CNN
+F 4 "OSRAM Opto Semiconductor" H 4350 2950 50  0001 C CNN "Manufacturer"
+F 5 "LY M67K-K1L2-26-Z" H 4350 2950 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 2950
+	-1   0    0    1   
+$EndComp
+Entry Bus Bus
+	3400 2500 3500 2400
+Wire Wire Line
+	1850 2500 1850 3000
+Wire Wire Line
+	2450 2500 2450 3000
+Wire Wire Line
+	2950 3050 3300 3050
+Wire Wire Line
+	2950 3450 3300 3450
+Wire Wire Line
+	2950 3850 3300 3850
+Wire Wire Line
+	2950 4250 3300 4250
+Wire Wire Line
+	2950 4650 3300 4650
+Entry Wire Line
+	2450 2500 2550 2400
+Entry Wire Line
+	3300 3050 3400 2950
+Entry Wire Line
+	3300 3450 3400 3350
+Entry Wire Line
+	3300 3850 3400 3750
+Entry Wire Line
+	3300 4250 3400 4150
+Entry Wire Line
+	3300 4650 3400 4550
+Entry Wire Line
+	1850 2500 1950 2400
+Text Label 2450 2600 0    50   ~ 0
+KEY2
+Text Label 1850 2600 0    50   ~ 0
+KEY1
+Text Label 3250 4650 2    50   ~ 0
+SEG_E
+Text Label 3250 4250 2    50   ~ 0
+SEG_D
+Text Label 3250 3850 2    50   ~ 0
+SEG_C
+Text Label 3250 3450 2    50   ~ 0
+SEG_B
+Text Label 3250 3050 2    50   ~ 0
+SEG_A
+Connection ~ 2450 4200
+Connection ~ 1850 4200
+Wire Wire Line
+	2950 4650 2950 4600
+Wire Wire Line
+	2350 4650 2950 4650
+Wire Wire Line
+	2350 4600 2350 4650
+Wire Wire Line
+	2300 4600 2350 4600
+Wire Wire Line
+	1850 4600 1850 4200
+Wire Wire Line
+	1900 4600 1850 4600
+Wire Wire Line
+	2450 4600 2450 4200
+Wire Wire Line
+	2500 4600 2450 4600
+$Comp
+L Switch:SW_Push SW10
+U 1 1 60E184CC
+P 2700 4600
+F 0 "SW10" H 2700 4885 50  0000 C CNN
+F 1 "SW_Push" H 2700 4794 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2700 4800 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2700 4800 50  0001 C CNN
+F 4 "Panasonic" H 2700 4600 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2700 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    2700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 60E184D4
+P 2100 4600
+F 0 "SW9" H 2100 4885 50  0000 C CNN
+F 1 "SW_Push" H 2100 4794 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2100 4800 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2100 4800 50  0001 C CNN
+F 4 "Panasonic" H 2100 4600 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2100 4600 50  0001 C CNN "Manufacturer Part Number"
+	1    2100 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 3400
+Connection ~ 1850 3400
+Connection ~ 2450 3800
+Connection ~ 1850 3800
+Wire Wire Line
+	2950 4250 2950 4200
+Wire Wire Line
+	2350 4250 2950 4250
+Wire Wire Line
+	2350 4200 2350 4250
+Wire Wire Line
+	2300 4200 2350 4200
+Wire Wire Line
+	1850 4200 1850 3800
+Wire Wire Line
+	1900 4200 1850 4200
+Wire Wire Line
+	2450 4200 2450 3800
+Wire Wire Line
+	2500 4200 2450 4200
+$Comp
+L Switch:SW_Push SW8
+U 1 1 60E184E8
+P 2700 4200
+F 0 "SW8" H 2700 4485 50  0000 C CNN
+F 1 "SW_Push" H 2700 4394 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2700 4400 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2700 4400 50  0001 C CNN
+F 4 "Panasonic" H 2700 4200 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2700 4200 50  0001 C CNN "Manufacturer Part Number"
+	1    2700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 60E184F0
+P 2100 4200
+F 0 "SW7" H 2100 4485 50  0000 C CNN
+F 1 "SW_Push" H 2100 4394 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2100 4400 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2100 4400 50  0001 C CNN
+F 4 "Panasonic" H 2100 4200 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2100 4200 50  0001 C CNN "Manufacturer Part Number"
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3850 2950 3800
+Wire Wire Line
+	2350 3850 2950 3850
+Wire Wire Line
+	2350 3800 2350 3850
+Wire Wire Line
+	2300 3800 2350 3800
+Wire Wire Line
+	1850 3800 1850 3400
+Wire Wire Line
+	1900 3800 1850 3800
+Wire Wire Line
+	2450 3800 2450 3400
+Wire Wire Line
+	2500 3800 2450 3800
+$Comp
+L Switch:SW_Push SW6
+U 1 1 60E18500
+P 2700 3800
+F 0 "SW6" H 2700 4085 50  0000 C CNN
+F 1 "SW_Push" H 2700 3994 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2700 4000 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2700 4000 50  0001 C CNN
+F 4 "Panasonic" H 2700 3800 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2700 3800 50  0001 C CNN "Manufacturer Part Number"
+	1    2700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 60E18508
+P 2100 3800
+F 0 "SW5" H 2100 4085 50  0000 C CNN
+F 1 "SW_Push" H 2100 3994 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2100 4000 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2100 4000 50  0001 C CNN
+F 4 "Panasonic" H 2100 3800 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2100 3800 50  0001 C CNN "Manufacturer Part Number"
+	1    2100 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 3000
+Connection ~ 1850 3000
+Wire Wire Line
+	2950 3450 2950 3400
+Wire Wire Line
+	2350 3450 2950 3450
+Wire Wire Line
+	2350 3400 2350 3450
+Wire Wire Line
+	2300 3400 2350 3400
+Wire Wire Line
+	1850 3400 1850 3000
+Wire Wire Line
+	1900 3400 1850 3400
+Wire Wire Line
+	2450 3400 2450 3000
+Wire Wire Line
+	2500 3400 2450 3400
+$Comp
+L Switch:SW_Push SW4
+U 1 1 60E1851A
+P 2700 3400
+F 0 "SW4" H 2700 3685 50  0000 C CNN
+F 1 "SW_Push" H 2700 3594 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2700 3600 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2700 3600 50  0001 C CNN
+F 4 "Panasonic" H 2700 3400 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2700 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 60E18522
+P 2100 3400
+F 0 "SW3" H 2100 3685 50  0000 C CNN
+F 1 "SW_Push" H 2100 3594 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2100 3600 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2100 3600 50  0001 C CNN
+F 4 "Panasonic" H 2100 3400 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2100 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    2100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3050 2950 3000
+Wire Wire Line
+	2350 3050 2950 3050
+Wire Wire Line
+	2350 3000 2350 3050
+Wire Wire Line
+	2300 3000 2350 3000
+Wire Wire Line
+	1900 3000 1850 3000
+Wire Wire Line
+	2500 3000 2450 3000
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60E18530
+P 2700 3000
+F 0 "SW2" H 2700 3285 50  0000 C CNN
+F 1 "SW_Push" H 2700 3194 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2700 3200 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2700 3200 50  0001 C CNN
+F 4 "Panasonic" H 2700 3000 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2700 3000 50  0001 C CNN "Manufacturer Part Number"
+	1    2700 3000
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	7750 2200 7750 2300
+Entry Bus Bus
+	7650 2400 7750 2300
+Entry Bus Bus
+	6250 2300 6350 2400
+Entry Bus Bus
+	4750 2300 4850 2400
+Entry Bus Bus
+	3250 2300 3350 2400
+Entry Bus Bus
+	1750 2300 1850 2400
+Entry Wire Line
+	7650 2200 7750 2300
+Entry Wire Line
+	6250 2300 6350 2200
+Entry Wire Line
+	6250 2200 6350 2100
+Entry Wire Line
+	6250 2100 6350 2000
+Entry Wire Line
+	6250 2000 6350 1900
+Entry Wire Line
+	6250 1900 6350 1800
+Entry Wire Line
+	6250 1800 6350 1700
+Entry Wire Line
+	6250 1700 6350 1600
+Entry Wire Line
+	6250 1600 6350 1500
+Connection ~ 7400 2200
+Wire Wire Line
+	7650 2200 7400 2200
+Wire Wire Line
+	7400 2200 7300 2200
+Wire Wire Line
+	7400 2100 7400 2200
+Wire Wire Line
+	7300 2100 7400 2100
+Wire Wire Line
+	6350 1500 6700 1500
+Wire Wire Line
+	6700 1600 6350 1600
+Wire Wire Line
+	6700 1700 6350 1700
+Wire Wire Line
+	6350 1800 6700 1800
+Wire Wire Line
+	6700 1900 6350 1900
+Wire Wire Line
+	6350 2000 6700 2000
+Wire Wire Line
+	6700 2100 6350 2100
+Wire Wire Line
+	6350 2200 6700 2200
+Text Label 7650 2200 2    50   ~ 0
+COL4
+Text Label 6350 2200 0    50   ~ 0
+SEG_DP
+Text Label 6350 2100 0    50   ~ 0
+SEG_G
+Text Label 6350 2000 0    50   ~ 0
+SEG_F
+Text Label 6350 1900 0    50   ~ 0
+SEG_E
+Text Label 6350 1800 0    50   ~ 0
+SEG_D
+Text Label 6350 1700 0    50   ~ 0
+SEG_C
+Text Label 6350 1600 0    50   ~ 0
+SEG_B
+Text Label 6350 1500 0    50   ~ 0
+SEG_A
+$Comp
+L Display_Character:SA39-12EWA D4
+U 1 1 60E1855D
+P 7000 1800
+F 0 "D4" H 7000 2467 50  0000 C CNN
+F 1 "SA39-12EWA" H 7000 2376 50  0000 C CNN
+F 2 "Display_7Segment:Sx39-1xxxxx" H 7000 1250 50  0001 C CNN
+F 3 "lib/datasheets/SA39-12SRWA.pdf" H 7000 1800 50  0001 C CNN
+F 4 "Kingbright" H 7000 1800 50  0001 C CNN "Manufacturer"
+F 5 "SA39-12SRWA" H 7000 1800 50  0001 C CNN "Manufacturer Part Number"
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	6150 2200 6250 2300
+Entry Wire Line
+	4750 2300 4850 2200
+Entry Wire Line
+	4750 2200 4850 2100
+Entry Wire Line
+	4750 2100 4850 2000
+Entry Wire Line
+	4750 2000 4850 1900
+Entry Wire Line
+	4750 1900 4850 1800
+Entry Wire Line
+	4750 1800 4850 1700
+Entry Wire Line
+	4750 1700 4850 1600
+Entry Wire Line
+	4750 1600 4850 1500
+Connection ~ 5900 2200
+Wire Wire Line
+	6150 2200 5900 2200
+Wire Wire Line
+	5900 2200 5800 2200
+Wire Wire Line
+	5900 2100 5900 2200
+Wire Wire Line
+	5800 2100 5900 2100
+Wire Wire Line
+	4850 1500 5200 1500
+Wire Wire Line
+	5200 1600 4850 1600
+Wire Wire Line
+	5200 1700 4850 1700
+Wire Wire Line
+	4850 1800 5200 1800
+Wire Wire Line
+	5200 1900 4850 1900
+Wire Wire Line
+	4850 2000 5200 2000
+Wire Wire Line
+	5200 2100 4850 2100
+Wire Wire Line
+	4850 2200 5200 2200
+Text Label 6150 2200 2    50   ~ 0
+COL3
+Text Label 4850 2200 0    50   ~ 0
+SEG_DP
+Text Label 4850 2100 0    50   ~ 0
+SEG_G
+Text Label 4850 2000 0    50   ~ 0
+SEG_F
+Text Label 4850 1900 0    50   ~ 0
+SEG_E
+Text Label 4850 1800 0    50   ~ 0
+SEG_D
+Text Label 4850 1700 0    50   ~ 0
+SEG_C
+Text Label 4850 1600 0    50   ~ 0
+SEG_B
+Text Label 4850 1500 0    50   ~ 0
+SEG_A
+$Comp
+L Display_Character:SA39-12EWA D3
+U 1 1 60E18584
+P 5500 1800
+F 0 "D3" H 5500 2467 50  0000 C CNN
+F 1 "SA39-12EWA" H 5500 2376 50  0000 C CNN
+F 2 "Display_7Segment:Sx39-1xxxxx" H 5500 1250 50  0001 C CNN
+F 3 "lib/datasheets/SA39-12SRWA.pdf" H 5500 1800 50  0001 C CNN
+F 4 "Kingbright" H 5500 1800 50  0001 C CNN "Manufacturer"
+F 5 "SA39-12SRWA" H 5500 1800 50  0001 C CNN "Manufacturer Part Number"
+	1    5500 1800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	4650 2200 4750 2300
+Entry Wire Line
+	3250 2300 3350 2200
+Entry Wire Line
+	3250 2200 3350 2100
+Entry Wire Line
+	3250 2100 3350 2000
+Entry Wire Line
+	3250 2000 3350 1900
+Entry Wire Line
+	3250 1900 3350 1800
+Entry Wire Line
+	3250 1800 3350 1700
+Entry Wire Line
+	3250 1700 3350 1600
+Entry Wire Line
+	3250 1600 3350 1500
+Connection ~ 4400 2200
+Wire Wire Line
+	4650 2200 4400 2200
+Wire Wire Line
+	4400 2200 4300 2200
+Wire Wire Line
+	4400 2100 4400 2200
+Wire Wire Line
+	4300 2100 4400 2100
+Wire Wire Line
+	3350 1500 3700 1500
+Wire Wire Line
+	3700 1600 3350 1600
+Wire Wire Line
+	3700 1700 3350 1700
+Wire Wire Line
+	3350 1800 3700 1800
+Wire Wire Line
+	3700 1900 3350 1900
+Wire Wire Line
+	3350 2000 3700 2000
+Wire Wire Line
+	3700 2100 3350 2100
+Wire Wire Line
+	3350 2200 3700 2200
+Text Label 4650 2200 2    50   ~ 0
+COL2
+Text Label 3350 2200 0    50   ~ 0
+SEG_DP
+Text Label 3350 2100 0    50   ~ 0
+SEG_G
+Text Label 3350 2000 0    50   ~ 0
+SEG_F
+Text Label 3350 1900 0    50   ~ 0
+SEG_E
+Text Label 3350 1800 0    50   ~ 0
+SEG_D
+Text Label 3350 1700 0    50   ~ 0
+SEG_C
+Text Label 3350 1600 0    50   ~ 0
+SEG_B
+Text Label 3350 1500 0    50   ~ 0
+SEG_A
+$Comp
+L Display_Character:SA39-12EWA D2
+U 1 1 60E185AB
+P 4000 1800
+F 0 "D2" H 4000 2467 50  0000 C CNN
+F 1 "SA39-12EWA" H 4000 2376 50  0000 C CNN
+F 2 "Display_7Segment:Sx39-1xxxxx" H 4000 1250 50  0001 C CNN
+F 3 "lib/datasheets/SA39-12SRWA.pdf" H 4000 1800 50  0001 C CNN
+F 4 "Kingbright" H 4000 1800 50  0001 C CNN "Manufacturer"
+F 5 "SA39-12SRWA" H 4000 1800 50  0001 C CNN "Manufacturer Part Number"
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3150 2200 3250 2300
+Entry Wire Line
+	1750 2300 1850 2200
+Entry Wire Line
+	1750 2200 1850 2100
+Entry Wire Line
+	1750 2100 1850 2000
+Entry Wire Line
+	1750 2000 1850 1900
+Entry Wire Line
+	1750 1900 1850 1800
+Entry Wire Line
+	1750 1800 1850 1700
+Entry Wire Line
+	1750 1700 1850 1600
+Entry Wire Line
+	1750 1600 1850 1500
+Connection ~ 2900 2200
+Wire Wire Line
+	3150 2200 2900 2200
+Wire Wire Line
+	2900 2200 2800 2200
+Wire Wire Line
+	2900 2100 2900 2200
+Wire Wire Line
+	2800 2100 2900 2100
+Wire Wire Line
+	1850 1500 2200 1500
+Wire Wire Line
+	2200 1600 1850 1600
+Wire Wire Line
+	2200 1700 1850 1700
+Wire Wire Line
+	1850 1800 2200 1800
+Wire Wire Line
+	2200 1900 1850 1900
+Wire Wire Line
+	1850 2000 2200 2000
+Wire Wire Line
+	2200 2100 1850 2100
+Wire Wire Line
+	1850 2200 2200 2200
+Text Label 3150 2200 2    50   ~ 0
+COL1
+Text Label 1850 2200 0    50   ~ 0
+SEG_DP
+Text Label 1850 2100 0    50   ~ 0
+SEG_G
+Text Label 1850 2000 0    50   ~ 0
+SEG_F
+Text Label 1850 1900 0    50   ~ 0
+SEG_E
+Text Label 1850 1800 0    50   ~ 0
+SEG_D
+Text Label 1850 1700 0    50   ~ 0
+SEG_C
+Text Label 1850 1600 0    50   ~ 0
+SEG_B
+Text Label 1850 1500 0    50   ~ 0
+SEG_A
+$Comp
+L Display_Character:SA39-12EWA D1
+U 1 1 60E185D2
+P 2500 1800
+F 0 "D1" H 2500 2467 50  0000 C CNN
+F 1 "SA39-12EWA" H 2500 2376 50  0000 C CNN
+F 2 "Display_7Segment:Sx39-1xxxxx" H 2500 1250 50  0001 C CNN
+F 3 "lib/datasheets/SA39-12SRWA.pdf" H 2500 1800 50  0001 C CNN
+F 4 "Kingbright" H 2500 1800 50  0001 C CNN "Manufacturer"
+F 5 "SA39-12SRWA" H 2500 1800 50  0001 C CNN "Manufacturer Part Number"
+	1    2500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60E185DA
+P 3100 5500
+F 0 "R6" H 3150 5650 50  0000 L CNN
+F 1 "10k" V 3100 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 5500 50  0001 C CNN
+F 3 "~" H 3100 5500 50  0001 C CNN
+F 4 "Yageo" H 3100 5500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 3100 5500 50  0001 C CNN "Manufacturer Part Number"
+	1    3100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60E185E2
+P 2100 3000
+F 0 "SW1" H 2100 3285 50  0000 C CNN
+F 1 "SW_Push" H 2100 3194 50  0000 C CNN
+F 2 "EVQ-Q2x0xW:EVQ-Q2x0xW" H 2100 3200 50  0001 C CNN
+F 3 "lib/datasheets/EVQ-Q2.pdf" H 2100 3200 50  0001 C CNN
+F 4 "Panasonic" H 2100 3000 50  0001 C CNN "Manufacturer"
+F 5 "EVQ-Q2D03W" H 2100 3000 50  0001 C CNN "Manufacturer Part Number"
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 60E185EA
+P 3850 2950
+F 0 "D5" H 3843 2695 50  0000 C CNN
+F 1 "RED" H 3843 2786 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3850 2950 50  0001 C CNN
+F 3 "lib/datasheets/AP2012EC.pdf" H 3850 2950 50  0001 C CNN
+F 4 "Kingbright" H 3850 2950 50  0001 C CNN "Manufacturer"
+F 5 "AP2012EC" H 3850 2950 50  0001 C CNN "Manufacturer Part Number"
+	1    3850 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 3200 5550 3200
+Wire Wire Line
+	5850 3300 5550 3300
+Wire Wire Line
+	5850 3500 5550 3500
+Wire Wire Line
+	5850 3600 5550 3600
+Wire Wire Line
+	5850 3700 5550 3700
+Wire Wire Line
+	5850 3800 5550 3800
+Wire Wire Line
+	5850 3900 5550 3900
+Wire Wire Line
+	5850 4000 5550 4000
+Entry Wire Line
+	5550 4000 5450 3900
+Entry Wire Line
+	5550 3900 5450 3800
+Entry Wire Line
+	5550 3800 5450 3700
+Entry Wire Line
+	5550 3700 5450 3600
+Entry Wire Line
+	5550 3600 5450 3500
+Entry Wire Line
+	5550 3500 5450 3400
+Entry Wire Line
+	5550 3300 5450 3200
+Entry Wire Line
+	5550 3200 5450 3100
+Wire Wire Line
+	8450 3100 8100 3100
+Wire Wire Line
+	8450 3200 8300 3200
+Wire Wire Line
+	7250 4100 7650 4100
+Wire Wire Line
+	7650 4000 7250 4000
+Wire Wire Line
+	7250 3900 7650 3900
+Wire Wire Line
+	7650 3800 7250 3800
+Wire Wire Line
+	7250 3700 7650 3700
+Wire Wire Line
+	7650 3600 7250 3600
+Wire Wire Line
+	7250 3500 7650 3500
+Wire Wire Line
+	7650 3400 7250 3400
+Entry Wire Line
+	7750 3900 7650 4000
+Entry Wire Line
+	7750 4000 7650 4100
+Entry Wire Line
+	7750 3800 7650 3900
+Entry Wire Line
+	7750 3700 7650 3800
+Entry Wire Line
+	7750 3600 7650 3700
+Entry Wire Line
+	7750 3500 7650 3600
+Entry Wire Line
+	7750 3400 7650 3500
+Entry Wire Line
+	7750 3300 7650 3400
+Text Label 5600 3300 0    50   ~ 0
+KEY2
+Text Label 5600 3200 0    50   ~ 0
+KEY1
+Text Label 7600 4100 2    50   ~ 0
+SEG_DP
+Text Label 7600 4000 2    50   ~ 0
+SEG_G
+Text Label 7600 3900 2    50   ~ 0
+SEG_F
+Text Label 7600 3800 2    50   ~ 0
+SEG_E
+Text Label 7600 3700 2    50   ~ 0
+SEG_D
+Text Label 7600 3600 2    50   ~ 0
+SEG_C
+Text Label 7600 3500 2    50   ~ 0
+SEG_B
+Text Label 7600 3400 2    50   ~ 0
+SEG_A
+Text Label 5600 4000 0    50   ~ 0
+COL6
+Text Label 5600 3900 0    50   ~ 0
+COL5
+Text Label 5600 3800 0    50   ~ 0
+COL4
+Text Label 5600 3700 0    50   ~ 0
+COL3
+Text Label 5600 3600 0    50   ~ 0
+COL2
+Text Label 5600 3500 0    50   ~ 0
+COL1
+Wire Wire Line
+	6550 4500 6550 4600
+Wire Wire Line
+	6550 2800 6550 2700
+$Comp
+L power:+5V #PWR020
+U 1 1 60E18626
+P 6550 2700
+F 0 "#PWR020" H 6550 2550 50  0001 C CNN
+F 1 "+5V" H 6565 2873 50  0000 C CNN
+F 2 "" H 6550 2700 50  0001 C CNN
+F 3 "" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 60E1862C
+P 6550 4600
+F 0 "#PWR024" H 6550 4350 50  0001 C CNN
+F 1 "GND" H 6555 4427 50  0000 C CNN
+F 2 "" H 6550 4600 50  0001 C CNN
+F 3 "" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TM1637:TM1637 U3
+U 1 1 60E18634
+P 6550 3650
+F 0 "U3" H 6100 4350 50  0000 C CNN
+F 1 "TM1637" H 6900 2950 50  0000 C CNN
+F 2 "Package_SO:SOP-20_7.5x12.8mm_P1.27mm" H 6550 3650 50  0001 C CNN
+F 3 "lib/datasheets/TM1637.pdf" H 6550 3650 50  0001 C CNN
+F 4 "Titan Micro Electronics" H 6550 3650 50  0001 C CNN "Manufacturer"
+F 5 "TM1637" H 6550 3650 50  0001 C CNN "Manufacturer Part Number"
+	1    6550 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C7
+U 1 1 60E18644
+P 9650 3400
+F 0 "C7" H 9700 3500 50  0000 L CNN
+F 1 "220µF" H 9700 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 9688 3250 50  0001 C CNN
+F 3 "~" H 9650 3400 50  0001 C CNN
+F 4 "Lelon" H 9650 3400 50  0001 C CNN "Manufacturer"
+F 5 "VZL221M1CTR-0607" H 9650 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    9650 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60E18660
+P 5800 4550
+F 0 "C8" H 5915 4596 50  0000 L CNN
+F 1 "100nF" H 5915 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5838 4400 50  0001 C CNN
+F 3 "~" H 5800 4550 50  0001 C CNN
+F 4 "Kemet" H 5800 4550 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104M3RACTU" H 5800 4550 50  0001 C CNN "Manufacturer Part Number"
+	1    5800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 60E18666
+P 9650 3650
+F 0 "#PWR022" H 9650 3400 50  0001 C CNN
+F 1 "GND" H 9655 3477 50  0000 C CNN
+F 2 "" H 9650 3650 50  0001 C CNN
+F 3 "" H 9650 3650 50  0001 C CNN
+	1    9650 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR021
+U 1 1 60E1866C
+P 9650 3150
+F 0 "#PWR021" H 9650 3000 50  0001 C CNN
+F 1 "+5V" H 9665 3323 50  0000 C CNN
+F 2 "" H 9650 3150 50  0001 C CNN
+F 3 "" H 9650 3150 50  0001 C CNN
+	1    9650 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3650 9650 3550
+Wire Wire Line
+	9650 3250 9650 3150
+$Comp
+L Device:R R5
+U 1 1 60E18676
+P 8300 2800
+F 0 "R5" H 8350 2950 50  0000 L CNN
+F 1 "10k" V 8300 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8230 2800 50  0001 C CNN
+F 3 "~" H 8300 2800 50  0001 C CNN
+F 4 "Yageo" H 8300 2800 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 8300 2800 50  0001 C CNN "Manufacturer Part Number"
+	1    8300 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60E1867E
+P 8100 2800
+F 0 "R4" H 8150 2950 50  0000 L CNN
+F 1 "10k" V 8100 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8030 2800 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+F 4 "Yageo" H 8100 2800 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 8100 2800 50  0001 C CNN "Manufacturer Part Number"
+	1    8100 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR019
+U 1 1 60E18684
+P 8300 2500
+F 0 "#PWR019" H 8300 2350 50  0001 C CNN
+F 1 "+5V" H 8315 2673 50  0000 C CNN
+F 2 "" H 8300 2500 50  0001 C CNN
+F 3 "" H 8300 2500 50  0001 C CNN
+	1    8300 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 60E1868A
+P 8100 2500
+F 0 "#PWR018" H 8100 2350 50  0001 C CNN
+F 1 "+5V" H 8115 2673 50  0000 C CNN
+F 2 "" H 8100 2500 50  0001 C CNN
+F 3 "" H 8100 2500 50  0001 C CNN
+	1    8100 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2500 8100 2650
+Wire Wire Line
+	8300 2650 8300 2500
+$Comp
+L power:GND #PWR025
+U 1 1 60E18692
+P 5800 4800
+F 0 "#PWR025" H 5800 4550 50  0001 C CNN
+F 1 "GND" H 5805 4627 50  0000 C CNN
+F 2 "" H 5800 4800 50  0001 C CNN
+F 3 "" H 5800 4800 50  0001 C CNN
+	1    5800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR023
+U 1 1 60E18698
+P 5800 4300
+F 0 "#PWR023" H 5800 4150 50  0001 C CNN
+F 1 "+5V" H 5815 4473 50  0000 C CNN
+F 2 "" H 5800 4300 50  0001 C CNN
+F 3 "" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4800 5800 4700
+Wire Wire Line
+	5800 4400 5800 4300
+Entry Bus Bus
+	5450 2500 5550 2400
+Entry Bus Bus
+	7650 2400 7750 2500
+Text HLabel 4750 5700 2    50   Output ~ 0
+SW
+Text HLabel 2200 5700 0    50   Output ~ 0
+ENC_A
+Text HLabel 2200 5900 0    50   Output ~ 0
+ENC_B
+Text HLabel 8450 3100 2    50   3State ~ 0
+SDA
+Text HLabel 8450 3200 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	8100 2950 8100 3100
+Connection ~ 8100 3100
+Wire Wire Line
+	8100 3100 7250 3100
+Wire Wire Line
+	8300 2950 8300 3200
+Connection ~ 8300 3200
+Wire Wire Line
+	8300 3200 7250 3200
+Wire Bus Line
+	5000 2500 5000 4650
+Wire Bus Line
+	3400 2500 3400 4650
+Wire Bus Line
+	6250 1500 6250 2300
+Wire Bus Line
+	4750 1500 4750 2300
+Wire Bus Line
+	3250 1500 3250 2300
+Wire Bus Line
+	1750 1500 1750 2300
+Wire Bus Line
+	1850 2400 7650 2400
+Wire Bus Line
+	5450 2500 5450 4000
+Wire Bus Line
+	7750 2500 7750 4100
+$EndSCHEMATC

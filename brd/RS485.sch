@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "DMX Panel Controller"
+Date "2021-04-11"
+Rev "v1.0-rc1"
+Comp "Akornsys R & D & I"
+Comment1 "https://github.com/akornsys-rdi/dmx-panel-controller"
+Comment2 "Designed & drawn by: R. García"
+Comment3 "PCBID: FtBk#?%?01011421"
+Comment4 "Copyright © 2021 RileyStarlight, released under CERN OHL-S 2 License"
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 60E67258
+P 6850 3800
+F 0 "J4" H 6800 3600 50  0000 L CNN
+F 1 "DMX" V 6950 3800 50  0000 C CNN
+F 2 "TB006-508:TB006-508-03xx" H 6850 3800 50  0001 C CNN
+F 3 "lib/datasheets/TB006-508.pdf" H 6850 3800 50  0001 C CNN
+F 4 "CUI Devices" H 6850 3800 50  0001 C CNN "Manufacturer"
+F 5 "TB006-508-03BE" H 6850 3800 50  0001 C CNN "Manufacturer Part Number"
+	1    6850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN65HVD82:SN65HVD82 U5
+U 1 1 60E68A42
+P 5350 3850
+F 0 "U5" H 5050 4150 50  0000 C CNN
+F 1 "SN65HVD82" H 5600 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 3850 50  0001 C CNN
+F 3 "lib/datasheets/SN65HVD82.pdf" H 5350 3850 50  0001 C CNN
+F 4 "Texas Instruments" H 5350 3850 50  0001 C CNN "Manufacturer"
+F 5 "SN65HVD82DR" H 5350 3850 50  0001 C CNN "Manufacturer Part Number"
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 60E69E0E
+P 6200 3850
+F 0 "R16" H 6250 4000 50  0000 L CNN
+F 1 "120R" V 6200 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric" V 6130 3850 50  0001 C CNN
+F 3 "~" H 6200 3850 50  0001 C CNN
+F 4 "Yageo" H 6200 3850 50  0001 C CNN "Manufacturer"
+F 5 "RC1210JR-07120RL" H 6200 3850 50  0001 C CNN "Manufacturer Part Number"
+	1    6200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 60E6A1C6
+P 5650 3100
+F 0 "C15" H 5765 3146 50  0000 L CNN
+F 1 "100nF" H 5765 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 2950 50  0001 C CNN
+F 3 "~" H 5650 3100 50  0001 C CNN
+F 4 "Kemet" H 5650 3100 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104M3RACTU" H 5650 3100 50  0001 C CNN "Manufacturer Part Number"
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR043
+U 1 1 60E6A592
+P 5350 3300
+F 0 "#PWR043" H 5350 3150 50  0001 C CNN
+F 1 "+5V" H 5365 3473 50  0000 C CNN
+F 2 "" H 5350 3300 50  0001 C CNN
+F 3 "" H 5350 3300 50  0001 C CNN
+	1    5350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 60E6A825
+P 6500 4150
+F 0 "#PWR045" H 6500 3900 50  0001 C CNN
+F 1 "GND" H 6505 3977 50  0000 C CNN
+F 2 "" H 6500 4150 50  0001 C CNN
+F 3 "" H 6500 4150 50  0001 C CNN
+	1    6500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4150 6500 3700
+Wire Wire Line
+	6500 3700 6650 3700
+Wire Wire Line
+	6650 3900 6400 3900
+Wire Wire Line
+	6400 3900 6400 4050
+Wire Wire Line
+	6400 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 4000
+Wire Wire Line
+	6650 3800 6400 3800
+Wire Wire Line
+	6400 3800 6400 3650
+Wire Wire Line
+	6400 3650 6200 3650
+Wire Wire Line
+	6200 3650 6200 3700
+Wire Wire Line
+	5900 3800 6000 3800
+Wire Wire Line
+	6000 3800 6000 3650
+Wire Wire Line
+	6000 3650 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	5900 3900 6000 3900
+Wire Wire Line
+	6000 3900 6000 4050
+Wire Wire Line
+	6000 4050 6200 4050
+Connection ~ 6200 4050
+$Comp
+L power:GND #PWR046
+U 1 1 60E70E1F
+P 5350 4400
+F 0 "#PWR046" H 5350 4150 50  0001 C CNN
+F 1 "GND" H 5355 4227 50  0000 C CNN
+F 2 "" H 5350 4400 50  0001 C CNN
+F 3 "" H 5350 4400 50  0001 C CNN
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3300 5350 3400
+Wire Wire Line
+	5350 4300 5350 4400
+$Comp
+L power:GND #PWR044
+U 1 1 60E71FC6
+P 5650 3350
+F 0 "#PWR044" H 5650 3100 50  0001 C CNN
+F 1 "GND" H 5655 3177 50  0000 C CNN
+F 2 "" H 5650 3350 50  0001 C CNN
+F 3 "" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR041
+U 1 1 60E722A1
+P 5650 2850
+F 0 "#PWR041" H 5650 2700 50  0001 C CNN
+F 1 "+5V" H 5665 3023 50  0000 C CNN
+F 2 "" H 5650 2850 50  0001 C CNN
+F 3 "" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3350 5650 3250
+Wire Wire Line
+	5650 2850 5650 2950
+Wire Wire Line
+	4800 3900 4700 3900
+Wire Wire Line
+	4700 3900 4700 3800
+Wire Wire Line
+	4700 3800 4800 3800
+Text HLabel 4250 3700 0    50   Output ~ 0
+RX
+Text HLabel 4250 3800 0    50   Input ~ 0
+DIR
+Text HLabel 4250 4000 0    50   Input ~ 0
+TX
+Wire Wire Line
+	4250 4000 4400 4000
+Wire Wire Line
+	4250 3800 4700 3800
+Connection ~ 4700 3800
+Wire Wire Line
+	4250 3700 4400 3700
+$Comp
+L Device:R R15
+U 1 1 614BD32E
+P 4550 3700
+F 0 "R15" V 4450 3650 50  0000 C CNN
+F 1 "1k" V 4550 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4480 3700 50  0001 C CNN
+F 3 "~" H 4550 3700 50  0001 C CNN
+F 4 "Yageo" H 4550 3700 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-071KL" H 4550 3700 50  0001 C CNN "Manufacturer Part Number"
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 614C0ECE
+P 4550 4000
+F 0 "R17" V 4450 3950 50  0000 C CNN
+F 1 "1k" V 4550 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4480 4000 50  0001 C CNN
+F 3 "~" H 4550 4000 50  0001 C CNN
+F 4 "Yageo" H 4550 4000 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-071KL" H 4550 4000 50  0001 C CNN "Manufacturer Part Number"
+	1    4550 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 4000 4800 4000
+Wire Wire Line
+	4700 3700 4800 3700
+$Comp
+L Device:R R14
+U 1 1 606DA66E
+P 6200 3400
+F 0 "R14" H 6250 3550 50  0000 L CNN
+F 1 "560R" V 6200 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6130 3400 50  0001 C CNN
+F 3 "~" H 6200 3400 50  0001 C CNN
+F 4 "Yageo" H 6200 3400 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-07560RL" H 6200 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    6200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 606DB030
+P 6200 4300
+F 0 "R18" H 6250 4450 50  0000 L CNN
+F 1 "560R" V 6200 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6130 4300 50  0001 C CNN
+F 3 "~" H 6200 4300 50  0001 C CNN
+F 4 "Yageo" H 6200 4300 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-07560RL" H 6200 4300 50  0001 C CNN "Manufacturer Part Number"
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 606DB413
+P 6200 4550
+F 0 "#PWR047" H 6200 4300 50  0001 C CNN
+F 1 "GND" H 6205 4377 50  0000 C CNN
+F 2 "" H 6200 4550 50  0001 C CNN
+F 3 "" H 6200 4550 50  0001 C CNN
+	1    6200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR042
+U 1 1 606DBB7D
+P 6200 3150
+F 0 "#PWR042" H 6200 3000 50  0001 C CNN
+F 1 "+5V" H 6215 3323 50  0000 C CNN
+F 2 "" H 6200 3150 50  0001 C CNN
+F 3 "" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4550 6200 4450
+Wire Wire Line
+	6200 4150 6200 4050
+Wire Wire Line
+	6200 3550 6200 3650
+Wire Wire Line
+	6200 3250 6200 3150
+$EndSCHEMATC

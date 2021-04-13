@@ -1,0 +1,259 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "DMX Panel Controller"
+Date "2021-04-11"
+Rev "v1.0-rc1"
+Comp "Akornsys R & D & I"
+Comment1 "https://github.com/akornsys-rdi/dmx-panel-controller"
+Comment2 "Designed & drawn by: R. García"
+Comment3 "PCBID: FtBk#?%?01011421"
+Comment4 "Copyright © 2021 RileyStarlight, released under CERN OHL-S 2 License"
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 60E2F032
+P 4350 3450
+F 0 "J3" H 4350 3250 50  0000 C CNN
+F 1 "POWER" V 4450 3400 50  0000 C CNN
+F 2 "TB006-508:TB006-508-02xx" H 4350 3450 50  0001 C CNN
+F 3 "lib/datasheets/TB006-508.pdf" H 4350 3450 50  0001 C CNN
+F 4 "CUI Devices" H 4350 3450 50  0001 C CNN "Manufacturer"
+F 5 "TB006-508-02BE" H 4350 3450 50  0001 C CNN "Manufacturer Part Number"
+	1    4350 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L TPS560430:TPS560430 U4
+U 1 1 60E30511
+P 5750 3450
+F 0 "U4" H 5750 3865 50  0000 C CNN
+F 1 "TPS560430" H 5750 3774 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5750 3450 50  0001 C CNN
+F 3 "lib/datasheets/TPS560430.pdf" H 5750 3450 50  0001 C CNN
+F 4 "Texas Instruments" H 5750 3450 50  0001 C CNN "Manufacturer"
+F 5 "TPS560430XDBVR" H 5750 3450 50  0001 C CNN "Manufacturer Part Number"
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 60E30F22
+P 7150 3650
+F 0 "R12" H 7220 3696 50  0000 L CNN
+F 1 "88k7" V 7150 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7080 3650 50  0001 C CNN
+F 3 "~" H 7150 3650 50  0001 C CNN
+F 4 "Yageo" H 7150 3650 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0788K7L" H 7150 3650 50  0001 C CNN "Manufacturer Part Number"
+	1    7150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 60E312C1
+P 6950 3450
+F 0 "L1" V 7175 3450 50  0000 C CNN
+F 1 "18µH" V 7084 3450 50  0000 C CNN
+F 2 "SRN5020:SRN5020" H 6950 3450 50  0001 C CNN
+F 3 "lib/datasheets/SRN5020TA.pdf" H 6950 3450 50  0001 C CNN
+F 4 "Bourns" H 6950 3450 50  0001 C CNN "Manufacturer"
+F 5 "SRN5020TA-180M" H 6950 3450 50  0001 C CNN "Manufacturer Part Number"
+	1    6950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 60E32928
+P 6550 3450
+F 0 "C12" V 6298 3450 50  0000 C CNN
+F 1 "100nF" V 6389 3450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6588 3300 50  0001 C CNN
+F 3 "~" H 6550 3450 50  0001 C CNN
+F 4 "Kemet" H 6550 3450 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104M3RACTU" H 6550 3450 50  0001 C CNN "Manufacturer Part Number"
+	1    6550 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 60E32BA1
+P 5000 3600
+F 0 "C13" H 5115 3646 50  0000 L CNN
+F 1 "4.7µF" H 5115 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5038 3450 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+F 4 "Murata Electronics" H 5000 3600 50  0001 C CNN "Manufacturer"
+F 5 "GRM219R6YA475MA73D" H 5000 3600 50  0001 C CNN "Manufacturer Part Number"
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 60E32D64
+P 7500 3650
+F 0 "C14" H 7615 3696 50  0000 L CNN
+F 1 "15µF" H 7615 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7538 3500 50  0001 C CNN
+F 3 "~" H 7500 3650 50  0001 C CNN
+F 4 "Murata Electronics" H 7500 3650 50  0001 C CNN "Manufacturer"
+F 5 "GRT31CR60J156KE01L" H 7500 3650 50  0001 C CNN "Manufacturer Part Number"
+	1    7500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 60E37E30
+P 7150 4050
+F 0 "R13" H 7220 4096 50  0000 L CNN
+F 1 "22k1" V 7150 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7080 4050 50  0001 C CNN
+F 3 "~" H 7150 4050 50  0001 C CNN
+F 4 "Yageo" H 7150 4050 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0722K1L" H 7150 4050 50  0001 C CNN "Manufacturer Part Number"
+	1    7150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 60E3A9A2
+P 7500 3350
+F 0 "#PWR035" H 7500 3200 50  0001 C CNN
+F 1 "+5V" H 7515 3523 50  0000 C CNN
+F 2 "" H 7500 3350 50  0001 C CNN
+F 3 "" H 7500 3350 50  0001 C CNN
+	1    7500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3450 5000 3350
+Wire Wire Line
+	5200 3350 5200 3450
+$Comp
+L power:GND #PWR037
+U 1 1 60E3ECDD
+P 5000 3850
+F 0 "#PWR037" H 5000 3600 50  0001 C CNN
+F 1 "GND" H 5005 3677 50  0000 C CNN
+F 2 "" H 5000 3850 50  0001 C CNN
+F 3 "" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 60E3F1BA
+P 4700 3600
+F 0 "#PWR036" H 4700 3350 50  0001 C CNN
+F 1 "GND" H 4705 3427 50  0000 C CNN
+F 2 "" H 4700 3600 50  0001 C CNN
+F 3 "" H 4700 3600 50  0001 C CNN
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3850 5000 3750
+Wire Wire Line
+	4550 3450 4700 3450
+Wire Wire Line
+	4700 3450 4700 3600
+Wire Wire Line
+	4550 3350 5000 3350
+Connection ~ 5000 3350
+Wire Wire Line
+	5250 3450 5200 3450
+Wire Wire Line
+	5250 3350 5200 3350
+Wire Wire Line
+	6250 3450 6400 3450
+Wire Wire Line
+	6250 3350 6750 3350
+Wire Wire Line
+	6750 3350 6750 3450
+Wire Wire Line
+	6750 3450 6700 3450
+Wire Wire Line
+	6800 3450 6750 3450
+Connection ~ 6750 3450
+Wire Wire Line
+	7100 3450 7150 3450
+Wire Wire Line
+	7150 3450 7150 3500
+Wire Wire Line
+	7500 3500 7500 3450
+Wire Wire Line
+	7500 3450 7150 3450
+Connection ~ 7150 3450
+Wire Wire Line
+	7150 3800 7150 3850
+Wire Wire Line
+	6250 3550 6350 3550
+Wire Wire Line
+	6350 3550 6350 3850
+Wire Wire Line
+	6350 3850 7150 3850
+Connection ~ 7150 3850
+Wire Wire Line
+	7150 3850 7150 3900
+$Comp
+L power:GND #PWR040
+U 1 1 60E522BC
+P 7150 4300
+F 0 "#PWR040" H 7150 4050 50  0001 C CNN
+F 1 "GND" H 7155 4127 50  0000 C CNN
+F 2 "" H 7150 4300 50  0001 C CNN
+F 3 "" H 7150 4300 50  0001 C CNN
+	1    7150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 60E5282D
+P 7500 3900
+F 0 "#PWR038" H 7500 3650 50  0001 C CNN
+F 1 "GND" H 7505 3727 50  0000 C CNN
+F 2 "" H 7500 3900 50  0001 C CNN
+F 3 "" H 7500 3900 50  0001 C CNN
+	1    7500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3800 7500 3900
+Wire Wire Line
+	7150 4200 7150 4300
+$Comp
+L power:GND #PWR039
+U 1 1 60E53A46
+P 5750 4000
+F 0 "#PWR039" H 5750 3750 50  0001 C CNN
+F 1 "GND" H 5755 3827 50  0000 C CNN
+F 2 "" H 5750 4000 50  0001 C CNN
+F 3 "" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4000 5750 3900
+Wire Wire Line
+	7500 3350 7500 3450
+Connection ~ 7500 3450
+Wire Wire Line
+	5000 3250 5000 3350
+Wire Wire Line
+	5000 3350 5200 3350
+Connection ~ 5200 3350
+$Comp
+L power:+12V #PWR034
+U 1 1 617DD0DA
+P 5000 3250
+F 0 "#PWR034" H 5000 3100 50  0001 C CNN
+F 1 "+12V" H 5015 3423 50  0000 C CNN
+F 2 "" H 5000 3250 50  0001 C CNN
+F 3 "" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name TM1637)(type Legacy)(uri ${KIPRJMOD}/lib/TM1637.lib)(options "")(descr ""))
+  (lib (name TPS560430)(type Legacy)(uri ${KIPRJMOD}/lib/TPS560430.lib)(options "")(descr ""))
+  (lib (name SN65HVD82)(type Legacy)(uri ${KIPRJMOD}/lib/SN65HVD82.lib)(options "")(descr ""))
+)

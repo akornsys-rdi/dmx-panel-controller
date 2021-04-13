@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name SRN5020)(type KiCad)(uri ${KIPRJMOD}/lib/SRN5020.pretty)(options "")(descr ""))
+  (lib (name akorn-logo)(type KiCad)(uri ${KIPRJMOD}/lib/akorn-logo.pretty)(options "")(descr ""))
+  (lib (name pcbid)(type KiCad)(uri ${KIPRJMOD}/lib/pcbid.pretty)(options "")(descr ""))
+  (lib (name TB006-508)(type KiCad)(uri ${KIPRJMOD}/lib/TB006-508.pretty)(options "")(descr ""))
+  (lib (name EVQ-Q2x0xW)(type KiCad)(uri ${KIPRJMOD}/lib/EVQ-Q2x0xW.pretty)(options "")(descr ""))
+)
